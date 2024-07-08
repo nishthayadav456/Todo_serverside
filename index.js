@@ -10,9 +10,7 @@ connection()
 app.use(express.json())//transfer the data we r passing from our frontend to backend transfer in json format
 app.use(cors())
 
-app.get('/',(req,res)=>{
-    res.send("hello")
-})
+
 app.use("/api",userRoutes)
 app.use("/api",todoRoutes)
 const port = 3001
