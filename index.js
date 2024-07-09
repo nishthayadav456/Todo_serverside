@@ -2,9 +2,9 @@ const express = require('express')
 const cors=require('cors')
 const app = express()
 require('dotenv').config()
-const userRoutes=require("./Routes/userRoutes")
+const userRoutes=require("./routes/userRoutes")
 const connection=require('./db')
-const todoRoutes = require('./Routes/todoRoutes')
+const todoRoutes = require('./routes/todoRoutes')
 connection()
 //middlewares
 app.use(express.json())//transfer the data we r passing from our frontend to backend transfer in json format
